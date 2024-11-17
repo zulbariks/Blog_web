@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="images/logo.png" />
+    <title>Detail Blog</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="bg-black p-4 fixed w-full top-0 z-50">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2">
+          <img src="images/kumparan.png" alt="Kalisa Logo" class="h-16" />
+        </div>
+
+        <!-- link beranda -->
+        <div class="hidden md:flex space-x-6 text-white">
+          <a href="index.html" class="hover:text-gray-300 hover:">Home</a>
+          <a href="detail-blog.html" class="hover:text-gray-300">Detail Blog</a>
+          <a href="produk.html" class="hover:text-gray-300">Detail Author</a>
+          <a href="detail-kontak.html" class="hover:text-gray-300"
+            >Detail Kontak</a
+          >
+        </div>
+
+        <!-- Login Button di laptop-->
+        <div
+          class="hidden md:flex md:items-center md:gap-2 text-gray-800 bg-white px-4 py-2 rounded-md hover:bg-gray-200"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z"
+            ></path>
+          </svg>
+          <a href="#">Login</a>
+        </div>
+
+        <!-- Humburger HP -->
+        <div class="md:hidden">
+          <button id="menu-button" class="text-white focus:outline-none">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Navbar HP-->
+      <div id="mobile-menu" class="md:hidden hidden mt-4 space-y-2">
+        <a href="index.html" class="block text-white hover:text-gray-300"
+          >Home</a
+        >
+        <a href="detail-blog.html" class="block text-white hover:text-gray-300"
+          >Detail Blog</a
+        >
+        <a
+          href="Detail Author.html"
+          class="block text-white hover:text-gray-300"
+          >Detail Author</a
+        >
+        <a
+          href="detail-kontak.html"
+          class="block text-white hover:text-gray-300"
+          >Detail Kontak</a
+        >
+        <button
+          class="text-gray-800 font-bold px-4 py-2 bg-white rounded-md hover:bg-gray-200 flex items-center gap-2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM74.08,197.5a64,64,0,0,1,107.84,0,87.83,87.83,0,0,1-107.84,0ZM96,120a32,32,0,1,1,32,32A32,32,0,0,1,96,120Zm97.76,66.41a79.66,79.66,0,0,0-36.06-28.75,48,48,0,1,0-59.4,0,79.66,79.66,0,0,0-36.06,28.75,88,88,0,1,1,131.52,0Z"
+            ></path>
+          </svg>
+          Login
+        </button>
+      </div>
+    </nav>
+
+    <!-- Container Utama -->
+    <div class="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md mt-28">
+      <!-- Header Artikel -->
+      <div class="flex justify-between items-center mb-4">
+        <div>
+          <p class="text-sm text-gray-500 text-center">
+            Published in DigitalArtsMedia • 27 November 2022
+          </p>
+        </div>
+        <div class="flex space-x-4 text-gray-500">
+          <!-- Ikon media sosial -->
+          <a href="#" class="hover:text-gray-700"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a href="#" class="hover:text-gray-700"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="#" class="hover:text-gray-700"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- Judul Artikel -->
+      <h1 class="text-2xl md:text-4xl font-bold text-gray-800 text-center">
+        How to Survive as a Digital Illustrator in Digital Era now in year 2024
+      </h1>
+
+      <!-- Informasi Penulis -->
+      <div class="flex items-center mt-4">
+        <img
+          class="w-10 h-10 rounded-full mr-4"
+          src="images/logo.png"
+          alt="Author's profile picture"
+        />
+        <div>
+          <p class="text-gray-800 font-semibold">Samuel Jackson</p>
+          <p class="text-gray-500 text-sm">Digital Illustrator</p>
+        </div>
+        <p class="ml-auto text-gray-500 text-sm">2 minutes read</p>
+      </div>
+
+      <!-- Gambar make tags -->
+      <div class="relative my-6">
+        <img
+          class="w-full rounded-md"
+          src="images/hero.avif"
+          alt="Main image of the article"
+        />
+        <!-- Tags -->
+        <div class="absolute top-4 left-4 flex gap-2">
+          <span
+            class="text-xs font-medium text-white bg-blue-500 px-2 py-1 rounded"
+            >Digital Art</span
+          >
+          <span
+            class="text-xs font-medium text-white bg-green-500 px-2 py-1 rounded"
+            >Illustration</span
+          >
+          <span
+            class="text-xs font-medium text-white bg-purple-500 px-2 py-1 rounded"
+            >2024 Trends</span
+          >
+        </div>
+      </div>
+
+      <!-- Isi Artikel -->
+      <p class="text-gray-600 leading-relaxed">
+        "Praesent velit dolor, vulputate sit amet facilisis ac, venenatis quis
+        metus. Mauris lacinia nec sem eu pellentesque. Phasellus suscipit ante
+        non pellentesque egestas. Cras quis arcu mi."
+      </p>
+
+      <div class="mt-4 text-gray-500 italic">— Saepul Dara</div>
+    </div>
+
+    <!-- container again -->
+    <div class="max-w-6xl mx-auto p-6">
+      <!-- Heading -->
+      <div class="text-center mb-8">
+        <h1 class="text-2xl md:text-4xl font-bold text-gray-800">
+          Best Article Chosen for You
+        </h1>
+        <p class="text-gray-500 mt-2">
+          We have curated the best article based on your interest topic
+        </p>
+      </div>
+
+      <!-- card 4 biji -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+        <!-- card 1 Artikel -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="images/hero.avif"
+            alt="Article image"
+          />
+          <div class="p-4">
+            <h2
+              class="font-semibold text-[12px] text-center text-gray-800 md:text-lg"
+            >
+              How to Create Awesome 3D Modern Nature with Blender
+            </h2>
+            <div class="flex items-center">
+              <img
+                src="images/logo.png"
+                alt="Author"
+                class="h-10 w-10 rounded-full"
+              />
+              <p class="text-gray-500 text-[8px] mt-2 md:text-sm">
+                By Budi Sapridil · 7 min read
+              </p>
+            </div>
+            <div
+              class="flex flex-wrap gap-2 mt-3 items-center justify-center md:justify-start"
+            >
+              <span
+                class="text-xs font-medium text-gray-600 bg-gray-200 px-2 py-1 rounded"
+                >3D Art</span
+              >
+              <span
+                class="text-xs font-medium text-gray-600 bg-gray-200 px-2 py-1 rounded"
+                >Blender</span
+              >
+              <span
+                class="text-xs font-medium text-gray-600 bg-gray-200 px-2 py-1 rounded"
+                >Visual Arts</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 Artikel -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="images/hero.avif"
+            alt="Article image"
+          />
+          <div class="p-4">
+            <h2
+              class="font-semibold text-[12px] text-center md:text-lg text-gray-800"
+            >
+              Avoid This Thing When You Make 3D Design
+            </h2>
+            <div class="flex">
+              <img
+                src="images/logo.png"
+                alt="Author"
+                class="h-10 w-10 rounded-full"
+              />
+              <p class="text-gray-500 text-[8px] md:text-sm mt-2">
+                By Ernato Lavoic · 5 min read
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-3 justify-center">
+              <span
+                class="text-xs font-medium text-gray-600 bg-gray-200 px-2 py-1 rounded"
+                >3D Art</span
+              >
+              <span
+                class="text-xs font-medium text-gray-600 bg-gray-200 px-2 py-1 rounded"
+                >Blender</span
+              >
+              <span
+                class="text-xs font-medium text-gray-600 bg-gray-200 px-2 py-1 rounded"
+                >Illustrator</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 Artikel -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="images/hero.avif"
+            alt="Article image"
+          />
+          <div class="p-4">
+            <h2
+              class="font-semibold text-[12px] text-center md:text-lg text-gray-800"
+            >
+              Will Artificial Intelligence Replace The Digital Artist?
+            </h2>
+            <div class="flex">
+              <img
+                src="images/logo.png"
+                alt="Author"
+                class="h-10 w-10 rounded-full"
+              />
+              <p class="text-gray-500 text-[8px] md:text-sm mt-2">
+                By Technerd Guy · 2 min read
+              </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-3 justify-center">
+              <span
+                class="text-xs font-medium text-gray-600 bg-gray-200 px-2 py-1 rounded text-center"
+                >Design</span
+              >
+              <span
+                class="text-xs font-medium text-gray-600 bg-gray-200 px-2 py-1 rounded"
+                >Tech</span
+              >
+              <span
+                class="text-xs font-medium text-gray-600 bg-gray-200 px-2 py-1 rounded"
+                >Digital</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- card 4 Artikel -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden md:hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="images/hero.avif"
+            alt="Article image"
+          />
+          <div class="p-4">
+            <h2
+              class="font-semibold text-[12px] text-center md:text-lg text-gray-800"
+            >
+              Will Artificial Intelligence Replace The Digital Artist?
+            </h2>
+            <div class="flex">
+              <img
+                src="images/logo.png"
+                alt="Author"
+                class="h-10 w-10 rounded-full"
+              />
+              <p class="text-gray-500 text-[8px] md:text-sm mt-2">
+                By Technerd Guy · 2 min read
+              </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-3 justify-center">
+              <span
+                class="text-xs font-medium text-gray-600 bg-gray-200 px-2 py-1 rounded text-center"
+                >IOT</span
+              >
+              <span
+                class="text-xs font-medium text-gray-600 bg-gray-200 px-2 py-1 rounded"
+                >Tech</span
+              >
+              <span
+                class="text-xs font-medium text-gray-600 bg-gray-200 px-2 py-1 rounded"
+                >Digital</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="py-10 px-4 bg-black text-white mt-16">
+      <div class="max-w-6xl mx-auto grid gap-6">
+        <!-- Latest Headlines Section -->
+        <div class="md:flex md:justify-between items-start">
+          <div>
+            <h2 class="text-xl font-bold">Latest Headlines: Breaking</h2>
+            <p class="text-lg">News and Updates</p>
+          </div>
+          <!-- Subscribe Section -->
+          <div class="mt-4 md:mt-0">
+            <h2 class="text-lg font-bold">SUBSCRIBE to Newsletter</h2>
+            <form class="flex mt-2">
+              <input
+                type="email"
+                placeholder="Email address"
+                class="px-4 py-2 bg-gray-800 text-white border border-gray-600 focus:outline-none rounded-l-md w-full md:w-auto"
+              />
+              <button
+                type="submit"
+                class="px-4 py-2 bg-red-600 text-white font-semibold rounded-r-md hover:bg-red-700"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+          <div>
+            <h3 class="font-semibold mb-2">Home</h3>
+            <ul class="space-y-1">
+              <li><a href="#" class="hover:underline">U.S.</a></li>
+              <li><a href="#" class="hover:underline">Politics</a></li>
+              <li><a href="#" class="hover:underline">World</a></li>
+              <li><a href="#" class="hover:underline">Health</a></li>
+              <li><a href="#" class="hover:underline">Business</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-2">Entertainment</h3>
+            <ul class="space-y-1">
+              <li><a href="#" class="hover:underline">Video</a></li>
+              <li><a href="#" class="hover:underline">Science</a></li>
+              <li><a href="#" class="hover:underline">History</a></li>
+              <li><a href="#" class="hover:underline">Sports</a></li>
+              <li><a href="#" class="hover:underline">Magazine</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-2">Time Edge</h3>
+            <ul class="space-y-1">
+              <li><a href="#" class="hover:underline">Video</a></li>
+              <li><a href="#" class="hover:underline">Newsletter</a></li>
+              <li><a href="#" class="hover:underline">Subscribe</a></li>
+              <li><a href="#" class="hover:underline">Digital Magazine</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-2">Press Room</h3>
+            <ul class="space-y-1">
+              <li><a href="#" class="hover:underline">TIME Studios</a></li>
+              <li><a href="#" class="hover:underline">Site Map</a></li>
+              <li><a href="#" class="hover:underline">Media Kit</a></li>
+              <li><a href="#" class="hover:underline">Careers</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold mb-2">Get Help</h3>
+            <ul class="space-y-1">
+              <li><a href="#" class="hover:underline">Support</a></li>
+              <li><a href="#" class="hover:underline">Pricing</a></li>
+              <li><a href="#" class="hover:underline">Log In</a></li>
+              <li><a href="#" class="hover:underline">About Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    // Toggle Mobile Menu
+    const menuButton = document.getElementById("menu-button");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuButton.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</html>
